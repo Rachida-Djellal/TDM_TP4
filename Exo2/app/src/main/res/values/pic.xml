@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="images">
+        <item>@drawable/vkjvkjk</item>
+        <item>@drawable/rjyrjy</item>
+        <item>@drawable/iuytrdsdcvbn</item>
+        <item>@drawable/vvvvvv</item>
+
+
+    </integer-array>
+    <integer-array name="images1">
+        <item>@drawable/chinua</item>
+        <item>@drawable/hans</item>
+        <item>@drawable/albert</item>
+        <item>@drawable/parpaul</item>
+    </integer-array>
+</resources>

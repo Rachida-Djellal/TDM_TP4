@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="planets_array">
+        <item>"Le monde s’effondre "</item>
+        <item>"Contes"</item>
+        <item>"L’Étranger"</item>
+        <item>"Les poèmes"</item>
+
+    </string-array>
+    <string-array name="planets_array2">
+        <item>"Chinua Achebe"</item>
+        <item>"Hans Christian Andersen"</item>
+        <item>"Albert Camus"</item>
+        <item>"par Paul Celan"</item>
+    </string-array>
+    <string-array name="planets_array1">
+        <item>"Destruction de la vie tribale à la fin du siècle dernier par suite de l'arrivée des Européens; tragédie d'un homme dont toute la vie a tendu à devenir l'un des personnages les plus importants de son clan mais qui finit de la façon la plus misérable ; conversion au christianisme - cette abomination - de son fils qu'a éloigné de la vie ancestrale un rite cruel et sanguinaire dont a été victime son meilleur ami d'enfance"</item>
+        <item>"Un recueil de 3 des plus beaux contes d'Andersen, à lire et relire avec bonheur en découvrant les merveilleuses illustrations de Quentin Gréban : Poucette, La Petite Sirène et Le Rossignol et l'Empereur"</item>
+        <item>"Le roman met en scène un personnage-narrateur nommé Meursault, vivant à Alger en Algérie française. La première phrase du roman (l’incipit) est l’une des plus célèbres de la littérature française contemporaine :
+
+« Aujourd’hui, maman est morte. Ou peut-être hier, je ne sais pas. »"</item>
+        <item>"L’extrême dispersion des éditions de Celan en français confère à ce livre une fonction d’éclaireur, de viatique. Celui-ci invite à plus qu’à la découverte d’un poète majeur de ce siècle : il favorise une approche qui se change en reconnaissance.À l’effrayante question : comment écrire après Auschwitz ? Celan répond : en usant du langage de la mort. Car il eut à affronter et à vivre l’un des plus tragiques paradoxes qui soit : sa langue maternelle, l’allemand, est à la fois celle qui fonde sa culture et son identité, mais aussi celle qui régit le camp d’extermination où disparaissent ses propres parents. Et pourtant, Celan ne peut sans «mentir» (c’est lui qui le note) se soustraire à cette langue de l’enfance et de l’oppression mêlées."</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
