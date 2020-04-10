@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BlankFragment2">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="301dp"
+        android:layout_height="38dp"
+        android:textSize="24dp"
+        android:text="Le detail du module:" />
+
+    <TextView
+        android:id="@+id/intitule"
+        android:layout_width="124dp"
+        android:layout_height="155dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginLeft="66dp"
+        android:layout_marginBottom="-117dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="400dp"
+        android:text="Intitule:"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/duree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textview2"
+        android:layout_marginLeft="43dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/textview2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="130dp"
+        android:text="Enseignant:"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="24dp"
+        android:text="Duree Total:"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/ens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toRightOf="@+id/textView" />
+</RelativeLayout>
