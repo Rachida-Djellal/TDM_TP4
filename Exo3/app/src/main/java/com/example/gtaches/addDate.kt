@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.example.gtaches.MainActivity.MySingleton.id
 import com.example.gtaches.MainActivity.MySingleton.lastTask
 import com.example.gtaches.MainActivity.MySingleton.taskList
 import kotlinx.android.synthetic.main.fragment_add_date.*
@@ -37,8 +38,9 @@ class addDate : Fragment() {
         when(item!!.itemId){
             R.id.backBtn ->{
 
-                val date: Date = Date(datePicker.year, datePicker.month + 1, datePicker.dayOfMonth)
-                val note:Note=Note(date,lastTask)
+                val date: Date = Date(datePicker.year, datePicker.month , datePicker.dayOfMonth)
+                MainActivity.MySingleton.id+=1
+                val note:Note=Note(date,lastTask,MainActivity.MySingleton.id )
                 taskList.add(note)
                 view!!.findNavController().navigate(R.id.noteListFragment)
             }

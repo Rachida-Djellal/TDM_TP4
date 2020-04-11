@@ -5,15 +5,6 @@
     <item
         android:id="@+id/addNoteBtn"
         android:icon="@drawable/ic_save_black_24dp"
-        android:title="add"
-
-        app:showAsAction="always"
-
-
-        />
-
-
-
-
-
+        android:title="back"
+        app:showAsAction="always" />
 </menu>

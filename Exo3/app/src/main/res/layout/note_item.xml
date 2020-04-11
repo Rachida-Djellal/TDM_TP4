@@ -5,7 +5,7 @@
     android:orientation="horizontal">
 
     <ImageButton
-        android:id="@+id/delet"
+        android:id="@+id/deleat"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_check_black_24dp"/>
