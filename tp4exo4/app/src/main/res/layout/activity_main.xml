@@ -4,30 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-  <!--  <FrameLayout
-        android:id="@+id/contaner"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </FrameLayout> -->
     <TextView
         android:id="@+id/textView1"
         android:textSize="50sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Les seances" />
-  <GridView
-      android:id="@+id/grid"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:numColumns="3"
 
-      />
 
-     <!-- <ListView
+      <ListView
         android:id="@+id/liste"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
--->
+
 
 </LinearLayout>

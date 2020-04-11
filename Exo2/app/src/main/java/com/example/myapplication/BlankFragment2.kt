@@ -47,7 +47,7 @@ class BlankFragment2 : Fragment() {
 
             description.text=resources.getStringArray(R.array.planets_array1)[index]
 
-            var images = resources.obtainTypedArray(R.array.images)
+            var images = resources.obtainTypedArray(R.array.images1)
             var i= resources.getIntArray(R.array.images1)[index]
             image.setImageResource(images.getResourceId(index,-1))
         }

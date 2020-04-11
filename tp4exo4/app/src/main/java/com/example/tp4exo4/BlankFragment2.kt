@@ -124,7 +124,7 @@ class BlankFragment2 : Fragment() {
                 bundle.putString("telephone",array[5].getTelephne())
 
             }
-            if (index.equals("Hamdad L"))
+            if (index.equals("HAMDAD L"))
             {
                 bundle.putString("name",array[6].getName())
                 bundle.putString("prenom",array[6].getPrenom())
@@ -134,7 +134,7 @@ class BlankFragment2 : Fragment() {
                 bundle.putString("telephone",array[6].getTelephne())
 
             }
-            if (index.equals("Chebeib A"))
+            if (index.equals("Chebieb A"))
             {
                 bundle.putString("name",array[7].getName())
                 bundle.putString("prenom",array[7].getPrenom())

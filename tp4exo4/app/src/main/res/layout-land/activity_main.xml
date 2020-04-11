@@ -11,10 +11,13 @@
       android:layout_height="match_parent"
       android:layout_weight="1">
 
-    <ListView
-        android:id="@+id/liste"
+    <GridView
+        android:id="@+id/grid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:numColumns="3"
+
+        />
 
   </FrameLayout>
 

@@ -1,4 +1,4 @@
-package com.example.tp4_exo3
+package com.example.gtaches
 
 import org.junit.Test
 
