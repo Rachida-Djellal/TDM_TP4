@@ -121,9 +121,9 @@ class MainActivity : AppCompatActivity() {
                         Ens("Tolba","Moslim","Bouira","32 ans","Ingenieur","0623154896"),
                         Ens("Hamdad","Leila","Media","33 ans","Ingenieur","0526132984"),
                         Ens("Chbieb","Farid","Alger","34 ans","Ingenieur","0623159874"))
-                    val ens: String = array[position].getEnseignant()
-                    val duree: String = array[position].getDureeTotal()
-                    val intitule: String = array[position].getIntitule()
+                    val ens: String = array[position].Enseignant
+                    val duree: String = array[position].DureeTotal
+                    val intitule: String = array[position].Intitule
 
                     bundle.putString("ens", ens)
                     bundle.putString("duree", duree)
@@ -132,12 +132,12 @@ class MainActivity : AppCompatActivity() {
                     if (ens=="Ens Benkrid")
                     {
 
-                        bundle.putString("name", array1[1].getName())
-                        bundle.putString("prenom", array1[1].getPrenom())
-                        bundle.putString("adresse", array1[1].getAdresse())
-                        bundle.putString("age", array1[1].getAge())
-                        bundle.putString("deplome", array1[1].getDeplome())
-                        bundle.putString("telephone", array1[1].getTelephne())
+                        bundle.putString("name", array1[1].Name)
+                        bundle.putString("prenom", array1[1].Prenom)
+                        bundle.putString("adresse", array1[1].Adresse)
+                        bundle.putString("age", array1[1].Age)
+                        bundle.putString("deplome", array1[1].Diplome)
+                        bundle.putString("telephone", array1[1].Telephone)
                     }
 
                     Toast.makeText(this@MainActivity, ens,
@@ -145,72 +145,72 @@ class MainActivity : AppCompatActivity() {
 
                     if (ens.equals("Mostfai A"))
                     {
-                        bundle.putString("name",array1[0].getName())
-                        bundle.putString("prenom",array1[0].getPrenom())
-                        bundle.putString("adresse",array1[0].getAdresse())
-                        bundle.putString("age",array1[0].getAge())
-                        bundle.putString("deplome",array1[0].getDeplome())
-                        bundle.putString("telephone",array1[0].getTelephne())
+                        bundle.putString("name",array1[0].Name)
+                        bundle.putString("prenom",array1[0].Prenom)
+                        bundle.putString("adresse",array1[0].Adresse)
+                        bundle.putString("age",array1[0].Age)
+                        bundle.putString("deplome",array1[0].Diplome)
+                        bundle.putString("telephone",array1[0].Telephone)
 
                     }
                     if (ens.equals("Hassini Sabrina"))
                     {
-                        bundle.putString("name",array1[2].getName())
-                        bundle.putString("prenom",array1[2].getPrenom())
-                        bundle.putString("adresse",array1[2].getAdresse())
-                        bundle.putString("age",array1[2].getAge())
-                        bundle.putString("deplome",array1[2].getDeplome())
-                        bundle.putString("telephone",array1[2].getTelephne())
+                        bundle.putString("name",array1[2].Name)
+                        bundle.putString("prenom",array1[2].Prenom)
+                        bundle.putString("adresse",array1[2].Adresse)
+                        bundle.putString("age",array1[2].Age)
+                        bundle.putString("deplome",array1[2].Diplome)
+                        bundle.putString("telephone",array1[2].Telephone)
 
                     }
                     if (ens.equals("Hadji R"))
                     {
-                        bundle.putString("name",array1[3].getName())
-                        bundle.putString("prenom",array1[3].getPrenom())
-                        bundle.putString("adresse",array1[3].getAdresse())
-                        bundle.putString("age",array1[3].getAge())
-                        bundle.putString("deplome",array1[3].getDeplome())
-                        bundle.putString("telephone",array1[3].getTelephne())
+                        bundle.putString("name",array1[3].Name)
+                        bundle.putString("prenom",array1[3].Prenom)
+                        bundle.putString("adresse",array1[3].Adresse)
+                        bundle.putString("age",array1[3].Age)
+                        bundle.putString("deplome",array1[3].Diplome)
+                        bundle.putString("telephone",array1[3].Telephone)
 
                     }
                     if (ens.equals("Zakaria C"))
                     {
-                        bundle.putString("name",array1[4].getName())
-                        bundle.putString("prenom",array1[4].getPrenom())
-                        bundle.putString("adresse",array1[4].getAdresse())
-                        bundle.putString("age",array1[4].getAge())
-                        bundle.putString("deplome",array1[4].getDeplome())
-                        bundle.putString("telephone",array1[4].getTelephne())
+                        bundle.putString("name",array1[4].Name)
+                        bundle.putString("prenom",array1[4].Prenom)
+                        bundle.putString("adresse",array1[4].Adresse)
+                        bundle.putString("age",array1[4].Age)
+                        bundle.putString("deplome",array1[4].Diplome)
+                        bundle.putString("telephone",array1[4].Telephone)
 
                     }
                     if (ens.equals("Ens Tolba"))
                     {
-                        bundle.putString("name",array1[5].getName())
-                        bundle.putString("prenom",array1[5].getPrenom())
-                        bundle.putString("adresse",array1[5].getAdresse())
-                        bundle.putString("age",array1[5].getAge())
-                        bundle.putString("deplome",array1[5].getDeplome())
-                        bundle.putString("telephone",array1[5].getTelephne())
+                        bundle.putString("name",array1[5].Name)
+                        bundle.putString("prenom",array1[5].Prenom)
+                        bundle.putString("adresse",array1[5].Adresse)
+                        bundle.putString("age",array1[5].Age)
+                        bundle.putString("deplome",array1[5].Diplome)
+                        bundle.putString("telephone",array1[5].Telephone)
 
                     }
                     if (ens.equals("HAMDAD L"))
                     {
-                        bundle.putString("name",array1[6].getName())
-                        bundle.putString("prenom",array1[6].getPrenom())
-                        bundle.putString("adresse",array1[6].getAdresse())
-                        bundle.putString("age",array1[6].getAge())
-                        bundle.putString("deplome",array1[6].getDeplome())
-                        bundle.putString("telephone",array1[6].getTelephne())
+                        bundle.putString("name",array1[6].Name)
+                        bundle.putString("prenom",array1[6].Prenom)
+                        bundle.putString("adresse",array1[6].Adresse)
+                        bundle.putString("age",array1[6].Age)
+                        bundle.putString("deplome",array1[6].Diplome)
+                        bundle.putString("telephone",array1[6].Telephone)
 
                     }
                     if (ens.equals("Chebieb A"))
                     {
-                        bundle.putString("name",array1[7].getName())
-                        bundle.putString("prenom",array1[7].getPrenom())
-                        bundle.putString("adresse",array1[7].getAdresse())
-                        bundle.putString("age",array1[7].getAge())
-                        bundle.putString("deplome",array1[7].getDeplome())
-                        bundle.putString("telephone",array1[7].getTelephne())
+                        bundle.putString("name",array1[7].Name)
+                        bundle.putString("prenom",array1[7].Prenom)
+                        bundle.putString("adresse",array1[7].Adresse)
+                        bundle.putString("age",array1[7].Age)
+                        bundle.putString("deplome",array1[7].Diplome)
+                        bundle.putString("telephone",array1[7].Telephone)
 
                     }
                     val fragment = BlankFragment()
@@ -238,9 +238,9 @@ class MainActivity : AppCompatActivity() {
                 ) {
 
 
-                    val ens: String = array[position].getEnseignant()
-                    val duree: String = array[position].getDureeTotal()
-                    val intitule: String = array[position].getIntitule()
+                    val ens: String = array[position].Enseignant
+                    val duree: String = array[position].DureeTotal
+                    val intitule: String = array[position].Intitule
 
 
                     val intent = Intent(baseContext, Main2Activity::class.java)

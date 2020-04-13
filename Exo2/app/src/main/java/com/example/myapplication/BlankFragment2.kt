@@ -9,20 +9,6 @@ import android.R.attr.defaultValue
 import android.widget.ImageView
 import android.widget.TextView
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [BlankFragment2.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [BlankFragment2.newInstance] factory method to
- * create an instance of this fragment.
- */
 class BlankFragment2 : Fragment() {
 
     override fun onCreateView(
@@ -32,9 +18,6 @@ class BlankFragment2 : Fragment() {
     ): View? {
         val vv = inflater.inflate(R.layout.fragment_blank_fragment2, container, false)
 
-        //val index=arguments!!.getInt("amount")
-
-      // val item=arguments!!.getString("item")
         val bundle = this.arguments
         val image = vv.findViewById(R.id.imagel) as ImageView
         val description = vv.findViewById(R.id.descriptionl) as TextView
@@ -42,9 +25,8 @@ class BlankFragment2 : Fragment() {
 
         if (bundle != null) {
             val index = bundle.getInt("amount", defaultValue)
-           // val item=bundle.getString("item")
-            auteur.text=resources.getStringArray(R.array.planets_array2)[index]
 
+            auteur.text=resources.getStringArray(R.array.planets_array2)[index]
             description.text=resources.getStringArray(R.array.planets_array1)[index]
 
             var images = resources.obtainTypedArray(R.array.images1)
@@ -62,7 +44,7 @@ class BlankFragment2 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //you can set the title for your toolbar here for different fragments different titles
-        activity!!.title = "Fragment2"
+        activity!!.title = "Ma Bibliotheque"
     }
 }
 

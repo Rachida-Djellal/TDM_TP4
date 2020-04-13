@@ -24,7 +24,7 @@ class ListViewAdapter(
     init {
         inflater = LayoutInflater.from(mContext)
         this.arraylist = ArrayList()
-        this.arraylist.addAll(BlankFragment.movieNamesArrayList)
+        this.arraylist.addAll(BlankFragment.LivreNamesArrayList)
     }
 
     inner class ViewHolder {
@@ -36,11 +36,11 @@ class ListViewAdapter(
     }
 
     override fun getCount(): Int {
-        return BlankFragment.movieNamesArrayList.size
+        return BlankFragment.LivreNamesArrayList.size
     }
 
     override fun getItem(position: Int):LivreN {
-        return BlankFragment.movieNamesArrayList[position]
+        return BlankFragment.LivreNamesArrayList[position]
     }
 
     override fun getItemId(position: Int): Long {
@@ -62,9 +62,9 @@ class ListViewAdapter(
             holder = view.tag as ViewHolder
         }
         // Set the results into TextViews
-        holder.name!!.setText(BlankFragment.movieNamesArrayList[position].getAnimalName())
-        holder.name1!!.setText(BlankFragment.movieNamesArrayList[position].getImageName())
-        holder.image!!.setImageResource(BlankFragment.movieNamesArrayList[position].getImage())
+        holder.name!!.setText(BlankFragment.LivreNamesArrayList[position].payName)
+        holder.name1!!.setText(BlankFragment.LivreNamesArrayList[position].image_name)
+        holder.image!!.setImageResource(BlankFragment.LivreNamesArrayList[position].image)
 
         return view
     }

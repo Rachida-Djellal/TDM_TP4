@@ -43,27 +43,27 @@ class ListViewAdapter(
     }
 
     override fun getView(position: Int, view: View?, parent: ViewGroup): View {
-        var view = view
+        var view1 = view
         val holder: ViewHolder
         if (view == null) {
             holder = ViewHolder()
-            view = inflater.inflate(R.layout.lv_item, null)
+            view1 = inflater.inflate(R.layout.lv_item, null)
             // Locate the TextViews in listview_item.xml
-            holder.name = view!!.findViewById(R.id.date) as TextView
-            holder.name1 = view!!.findViewById(R.id.module) as TextView
-            holder.name2= view!!.findViewById(R.id.salle) as TextView
+            holder.name = view1.findViewById(R.id.date) as TextView
+            holder.name1 = view1.findViewById(R.id.module) as TextView
+            holder.name2= view1.findViewById(R.id.salle) as TextView
            // holder.image = view!!.findViewById(R.id.image) as ImageView
-            view.tag = holder
+            view1.tag = holder
         } else {
-            holder = view.tag as ViewHolder
+            holder = view1!!.tag as ViewHolder
         }
         // Set the results into TextViews
-        holder.name!!.setText(MainActivity.movieNamesArrayList[position].getDateS())
-        holder.name1!!.setText(MainActivity.movieNamesArrayList[position].getNameM())
-        holder.name2!!.setText(MainActivity.movieNamesArrayList[position].getSalle())
+        holder.name!!.setText(MainActivity.movieNamesArrayList[position].DateS)
+        holder.name1!!.setText(MainActivity.movieNamesArrayList[position].NameM)
+        holder.name2!!.setText(MainActivity.movieNamesArrayList[position].Salle)
       // holder.image!!.setImageResource(BlankFragment.movieNamesArrayList[position].getImage())
 
-        return view
+        return view1!!
     }
 
 

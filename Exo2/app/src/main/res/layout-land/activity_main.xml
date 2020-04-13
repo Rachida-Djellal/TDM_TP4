@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:background="#FFC107"
+    android:gravity="center">
 
     <FrameLayout
+
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
+
         <TextView
             android:id="@+id/textView1"
             android:textSize="50sp"
@@ -16,11 +23,16 @@
             android:layout_height="wrap_content"
             android:text="Les Livres" />
 
-
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView6"
+            android:fillViewport="true">
         <ListView
             android:id="@+id/liste"
+            android:layout_marginTop="100dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="280dp" />
+    </ScrollView>
     </FrameLayout>
 
     <FrameLayout

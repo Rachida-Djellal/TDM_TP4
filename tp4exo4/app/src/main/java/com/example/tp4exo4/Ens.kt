@@ -1,12 +1,12 @@
 package com.example.tp4exo4
 
 class Ens {
-    private val Name: String
-    private val  Prenom:String
-    private val  Adresse:String
-    private val Age: String
-    private val  Diplome:String
-    private val  Telephone:String
+     val Name: String
+     val  Prenom:String
+     val  Adresse:String
+     val Age: String
+     val  Diplome:String
+     val  Telephone:String
 
 
     constructor(Name: String,name:String,s:String,d:String,k:String,l:String){
@@ -20,24 +20,5 @@ class Ens {
         this.Telephone=l
     }
 
-    fun getName(): String {
-        return this.Name
-    }
-    fun getPrenom(): String {
-        return this.Prenom
-    }
-    fun getAdresse(): String {
-        return this.Adresse
-    }
 
-    fun getAge(): String {
-        return this.Age
-    }
-
-    fun getTelephne(): String {
-        return this.Telephone
-    }
-    fun getDeplome(): String {
-        return this.Diplome
-    }
 }

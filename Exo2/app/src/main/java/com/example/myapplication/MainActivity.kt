@@ -17,17 +17,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val isLandscape = this.getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE
         if (isTablet(this) || isLandscape) {
-            var array = arrayOf( LivreN("Le monde S'enffondre",R.drawable.vkjvkjk,"1"),
-                LivreN("Contes",R.drawable.rjyrjy,"2"),
-                LivreN("L'etranger",R.drawable.iuytrdsdcvbn,"3"),
-                LivreN("Les poèmes",R.drawable.vvvvvv,"4"))
+            var array = arrayOf( LivreN("Le monde S'enffondre",R.drawable.vkjvkjk,""),
+                LivreN("Contes",R.drawable.rjyrjy,""),
+                LivreN("L'etranger",R.drawable.iuytrdsdcvbn,""),
+                LivreN("Les poèmes",R.drawable.vvvvvv,"s"))
             val lv = findViewById(R.id.liste) as ListView
-            BlankFragment.movieNamesArrayList = ArrayList()
+            BlankFragment.LivreNamesArrayList = ArrayList()
 
             for (i in array!!.indices) {
-                val movieNames = array!![i]
-                // Binds all strings into an array
-                BlankFragment.movieNamesArrayList.add(movieNames)
+                val livreNames = array!![i]
+                var j:Int=i
+                livreNames.setimageName((j+1).toString())
+
+
+                BlankFragment.LivreNamesArrayList.add(livreNames)
             }
 
             adapter = ListViewAdapter(this)

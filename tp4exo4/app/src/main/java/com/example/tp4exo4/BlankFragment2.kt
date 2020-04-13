@@ -14,19 +14,7 @@ import android.content.Intent
 import android.widget.Toast
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [BlankFragment2.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [BlankFragment2.newInstance] factory method to
- * create an instance of this fragment.
- */
 class BlankFragment2 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,18 +45,18 @@ class BlankFragment2 : Fragment() {
 
 
         ens.setOnClickListener {
-            val bundle = Bundle()
+            val bundle1 = Bundle()
 
 
             if (index=="Ens Benkrid")
             {
 
-            bundle.putString("name", array[1].getName())
-            bundle.putString("prenom", array[1].getPrenom())
-            bundle.putString("adresse", array[1].getAdresse())
-            bundle.putString("age", array[1].getAge())
-            bundle.putString("deplome", array[1].getDeplome())
-            bundle.putString("telephone", array[1].getTelephne())
+            bundle1.putString("name", array[1].Name)
+            bundle1.putString("prenom", array[1].Prenom)
+            bundle1.putString("adresse", array[1].Adresse)
+            bundle1.putString("age", array[1].Age)
+            bundle1.putString("deplome", array[1].Diplome)
+            bundle1.putString("telephone", array[1].Telephone)
         }
             Toast.makeText(getActivity(), index,
                 Toast.LENGTH_LONG).show();
@@ -76,72 +64,72 @@ class BlankFragment2 : Fragment() {
 
             if (index.equals("Mostfai A"))
             {
-                bundle.putString("name",array[0].getName())
-                bundle.putString("prenom",array[0].getPrenom())
-                bundle.putString("adresse",array[0].getAdresse())
-                bundle.putString("age",array[0].getAge())
-                bundle.putString("deplome",array[0].getDeplome())
-                bundle.putString("telephone",array[0].getTelephne())
+                bundle1.putString("name",array[0].Name)
+                bundle1.putString("prenom",array[0].Prenom)
+                bundle1.putString("adresse",array[0].Adresse)
+                bundle1.putString("age",array[0].Age)
+                bundle1.putString("deplome",array[0].Diplome)
+                bundle1.putString("telephone",array[0].Telephone)
 
             }
             if (index.equals("Hassini Sabrina"))
             {
-                bundle.putString("name",array[2].getName())
-                bundle.putString("prenom",array[2].getPrenom())
-                bundle.putString("adresse",array[2].getAdresse())
-                bundle.putString("age",array[2].getAge())
-                bundle.putString("deplome",array[2].getDeplome())
-                bundle.putString("telephone",array[2].getTelephne())
+                bundle1.putString("name",array[2].Name)
+                bundle1.putString("prenom",array[2].Prenom)
+                bundle1.putString("adresse",array[2].Adresse)
+                bundle1.putString("age",array[2].Age)
+                bundle1.putString("deplome",array[2].Diplome)
+                bundle1.putString("telephone",array[2].Telephone)
 
             }
             if (index.equals("Hadji R"))
             {
-                bundle.putString("name",array[3].getName())
-                bundle.putString("prenom",array[3].getPrenom())
-                bundle.putString("adresse",array[3].getAdresse())
-                bundle.putString("age",array[3].getAge())
-                bundle.putString("deplome",array[3].getDeplome())
-                bundle.putString("telephone",array[3].getTelephne())
+                bundle1.putString("name",array[3].Name)
+                bundle1.putString("prenom",array[3].Prenom)
+                bundle1.putString("adresse",array[3].Adresse)
+                bundle1.putString("age",array[3].Age)
+                bundle1.putString("deplome",array[3].Diplome)
+                bundle1.putString("telephone",array[3].Telephone)
 
             }
             if (index.equals("Zakaria C"))
             {
-                bundle.putString("name",array[4].getName())
-                bundle.putString("prenom",array[4].getPrenom())
-                bundle.putString("adresse",array[4].getAdresse())
-                bundle.putString("age",array[4].getAge())
-                bundle.putString("deplome",array[4].getDeplome())
-                bundle.putString("telephone",array[4].getTelephne())
+                bundle1.putString("name",array[4].Name)
+                bundle1.putString("prenom",array[4].Prenom)
+                bundle1.putString("adresse",array[4].Adresse)
+                bundle1.putString("age",array[4].Age)
+                bundle1.putString("deplome",array[4].Diplome)
+                bundle1.putString("telephone",array[4].Telephone)
 
             }
             if (index.equals("Ens Tolba"))
             {
-                bundle.putString("name",array[5].getName())
-                bundle.putString("prenom",array[5].getPrenom())
-                bundle.putString("adresse",array[5].getAdresse())
-                bundle.putString("age",array[5].getAge())
-                bundle.putString("deplome",array[5].getDeplome())
-                bundle.putString("telephone",array[5].getTelephne())
+                bundle1.putString("name",array[5].Name)
+                bundle1.putString("prenom",array[5].Prenom)
+                bundle1.putString("adresse",array[5].Adresse)
+                bundle1.putString("age",array[5].Age)
+                bundle1.putString("deplome",array[5].Diplome)
+                bundle1.putString("telephone",array[5].Telephone)
 
             }
             if (index.equals("HAMDAD L"))
             {
-                bundle.putString("name",array[6].getName())
-                bundle.putString("prenom",array[6].getPrenom())
-                bundle.putString("adresse",array[6].getAdresse())
-                bundle.putString("age",array[6].getAge())
-                bundle.putString("deplome",array[6].getDeplome())
-                bundle.putString("telephone",array[6].getTelephne())
+                bundle1.putString("name",array[6].Name)
+                bundle1.putString("prenom",array[6].Prenom)
+                bundle1.putString("adresse",array[6].Adresse)
+                bundle1.putString("age",array[6].Age)
+                bundle1.putString("deplome",array[6].Diplome)
+                bundle1.putString("telephone",array[6].Telephone)
 
             }
             if (index.equals("Chebieb A"))
             {
-                bundle.putString("name",array[7].getName())
-                bundle.putString("prenom",array[7].getPrenom())
-                bundle.putString("adresse",array[7].getAdresse())
-                bundle.putString("age",array[7].getAge())
-                bundle.putString("deplome",array[7].getDeplome())
-                bundle.putString("telephone",array[7].getTelephne())
+                bundle1.putString("name",array[7].Name)
+                bundle1.putString("prenom",array[7].Prenom)
+                bundle1.putString("adresse",array[7].Adresse)
+                bundle1.putString("age",array[7].Age)
+                bundle1.putString("deplome",array[7].Diplome)
+                bundle1.putString("telephone",array[7].Telephone)
 
             }
 
@@ -151,7 +139,7 @@ class BlankFragment2 : Fragment() {
 
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.contaner, fragment)
-            fragment.arguments=bundle
+            fragment.arguments=bundle1
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
